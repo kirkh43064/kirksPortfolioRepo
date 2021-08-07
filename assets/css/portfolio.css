@@ -1,103 +1,171 @@
+/* setting font size and family for whole page */
 * {
     font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
- 
-  header {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 20px;
-    background-color: black;
-    color: #fff;
-    flex: 0 0 100%;
-  }
+/* adding margins to body */
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: lightgrey;
+}
 
-  h1 {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1%;
-    font-size: 3em;
-    margin-bottom: 3%;
-    flex-direction: flex-start;
-  }
+/* setting the main header size and position */
+h1 {
+  padding-bottom: 1%;
+  font-size: 3em;
+  margin-bottom: 1%;
+  color: coral;
+}
 
+/* setting the subheading size  */
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+/* setting tag size */
+h3 {
+  font-size: 1.5em;
+}
+
+/* creating flex conainer backgound image and size */
+header {
+  display: flex;
+  padding: 20px;
+  background-color: cadetblue;
+  color: #fff;
+  flex: 0 100%;
+  justify-content: space-between;
+}
+
+/* setting our main flex container */
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/* defining section flex direction                                                   */
+section {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+  /* difining the nav placement */
   .book {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-direction: flex-end;
     padding: 5px;
-    background-color: cornsilk;
-    line-height: 1em;
-  }
-  
-  p {
-    margin-left: 3%;
-  }
-
-  h2 {
-    font-size: 2em;
     margin-bottom: 10px;
-  }
-
-  h3 {
+    padding-right: 40px;
+    width: 800px;
     font-size: 1.5em;
-    padding: 2%;
-    background-color: cornflowerblue;
+    text-align: right;
   }
 
+  /* defining bookmark section on left */
+  .sectionBookmark {
+    flex: 0 0 25%;
+    align-items: stretch;
+  } 
+
+  /* define flex box for tje bio section */
+  .bio {
+    flex: 0 0 63%;
+    border-left: solid 3px cornflowerblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  /* main container for the apps defines flex flow */
   .appsContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 75%;
+    flex: 0 0 70%;
     border-left: solid 3px cornflowerblue;
   }
 
-  .apps1 {
-    display: flex;
-    flex-direction: row;
-    flex: 0 0 90%;
-    border: solid 2px cornflowerblue;
-    margin: 5px;
+  /* makes img look pretty */
+  img {
+    border: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
   }
 
+  /* sets the first app larger than the rest */
+  .app1 {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 91%;
+    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
+    border: solid 2px cornflowerblue;
+    margin: 5px;
+    height: 300px;
+  }
+ 
+  /* puts the rest of the apps in rows of 2 */
   .apps {
     display: flex;
     flex-direction: row;
-    flex: 0 0 46%;
+    flex: 0 0 45%;
     border: solid 2px cornflowerblue;
     margin: 5px;
-  }
-  
-  nav a:hover {
-    background-color: #fff;
-  }
-  
-  main {
-    min-height: 100vh;
-    background-color: darkgrey;
-  }
-  
-  .bio {
-    float: right;
-    width: 75%;
-    border-left: solid 3px lightblue;
+    height: 300px;
   }
 
-  .sectionBookmark {
-    display: flex;
-    float: left;
-    width: 25%;
-    background-color: blue;
+  /* defines the tag text box on the images */
+  .tag {
+    display: block;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 150px;
+    padding: 5px;
+    background-color: cornflowerblue;
   }
 
+  /* setting the background images for the app boxes */
+  .led {
+    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
+  }
+
+  /* setting the background images for the app boxes */
+  .calc {
+    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
+  }  
+
+  /* setting the background images for the app boxes */
+  .four {
+    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
+  }
+
+  /* setting the background images for the app boxes */
+  .buddy {
+    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
+  }
+
+
+
+  /* defines fles flow of */
   footer {
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0 0 64%;
     bottom: 0;
-    padding: 20px;
-    background: #13293d;
+    background: grey;
+    border-left: solid 3px cornflowerblue;
     color: #fff;
     margin-top: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right: 5px;
   }
   
