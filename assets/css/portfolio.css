@@ -105,7 +105,7 @@ section {
   .app1 {
     display: flex;
     flex-direction: row;
-    flex: 0 0 91%;
+    flex: 0 1 91%;
     background-image: url("../ARTICLE-calculator-image-680x500.jpg");
     border: solid 2px cornflowerblue;
     margin: 5px;
@@ -116,7 +116,7 @@ section {
   .apps {
     display: flex;
     flex-direction: row;
-    flex: 0 0 45%;
+    flex: 0 1 45%;
     border: solid 2px cornflowerblue;
     margin: 5px;
     height: 300px;
