@@ -17,6 +17,7 @@ h1 {
   font-size: 3em;
   margin-bottom: 1%;
   color: coral;
+  text-align: center;
 }
 
 /* setting the subheading size  */
@@ -34,38 +35,20 @@ h3 {
 }
 
 /* creating flex conainer backgound image and size */
-header {
-  display: flex;
-  padding: 20px;
-  background-color: cadetblue;
+.jumbotron {
   color: #fff;
-  flex: 0 100%;
-  justify-content: space-between;
+  background-image: url("./assets/images/note-book-green-shadow-header.jpg");
+  background-size: contain;S
 }
 
-/* setting our main flex container */
-main {
- 
+.li {
+  font-size: 2em;
 }
 
-/* defining section flex direction                                                   */
-section {
-  
-}
 
-a {
-  border: solid 2px cornflowerblue;
-}
 
-  /* difining the nav placement */
-  .book {
-  
-  }
 
-  /* defining bookmark section on left */
-  .sectionBookmark {
-    
-  } 
+
 
   /* define flex box for tje bio section */
   .bio {
@@ -77,23 +60,20 @@ a {
     border-left: solid 3px cornflowerblue;
   }
 
-  /* makes img look pretty */
-  img {
-    border: 0;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-  }
+  
 
   /* sets the first app larger than the rest */
   #project1 {
-    background-image: url(./assets/images/project1.PNG);
+    background-image: url('./assets/images/project1.PNG');
+    background-size: contain;
     border: solid 2px cornflowerblue;
+    height: 400px;
   }
  
   /* puts the rest of the apps in rows of 2 */
-  .apps {
+  .app {
     border: solid 2px cornflowerblue;
+    height: 400px;
   }
 
   /* defines the tag text box on the images */
@@ -103,8 +83,10 @@ a {
 
   /* setting the background images for the app boxes */
   #rpg {
-    background-image: url(./assets/images/rpg.PNG);
+    background-image: url('./assets/images/rpg.PNG');
+    background-size: auto;
     border: solid 2px cornflowerblue;
+    height: 400px;
   }
 
   /* setting the background images for the app boxes */
@@ -133,6 +115,7 @@ a {
     background: grey;
     border-left: solid 3px cornflowerblue;
     color: #fff;
+    font-size: 2em;
     /* margin-top: auto;
     padding-bottom: 10px;
     padding-top: 10px;
