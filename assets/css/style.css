@@ -6,8 +6,6 @@
 
 /* adding margins to body */
 body {
-  /* margin-left: 20px;
-  margin-right: 20px; */
   background-color: lightgrey;
 }
 
@@ -37,8 +35,8 @@ h3 {
 /* creating flex conainer backgound image and size */
 .jumbotron {
   color: #fff;
-  background-image: url("./assets/images/note-book-green-shadow-header.jpg");
-  background-size: contain;S
+  background-image: url("../images/note-book-green-shadow-header.jpg");
+  background-size: contain;
 }
 
 .li {
@@ -46,79 +44,56 @@ h3 {
 }
 
 
-
-
-
-
-  /* define flex box for tje bio section */
-  .bio {
-    border-left: solid 3px cornflowerblue;
-  }
-
-  /* main container for the apps defines flex flow */
-  .appsContainer {
-    border-left: solid 3px cornflowerblue;
-  }
-
+.sectionBookmark {
+  border-right: solid 3px cornflowerblue;
+}
   
 
   /* sets the first app larger than the rest */
-  #project1 {
-    background-image: url('./assets/images/project1.PNG');
-    background-size: contain;
-    border: solid 2px cornflowerblue;
-    height: 400px;
-  }
- 
+#project1 {
+  background-image: url('../images/project1.PNG');
+  background-size: contain;
+  border: solid 2px cornflowerblue;
+  height: 400px;
+} 
   /* puts the rest of the apps in rows of 2 */
-  .app {
-    border: solid 2px cornflowerblue;
-    height: 400px;
-  }
+.app {
+  border: solid 2px cornflowerblue;
+  height: 400px;
+}
 
   /* defines the tag text box on the images */
-  .tag {
-    background-color: cornflowerblue;
-  }
+.tag {
+  background-color: cornflowerblue;
+  
+}
 
   /* setting the background images for the app boxes */
-  #rpg {
-    background-image: url('./assets/images/rpg.PNG');
-    background-size: auto;
-    border: solid 2px cornflowerblue;
-    height: 400px;
-  }
+#rpg {
+  background-image: url('../images/rpg.PNG');
+  background-size: auto;
+  border: solid 2px cornflowerblue;
+  height: 400px;
+}
 
   /* setting the background images for the app boxes */
-  .calc {
-    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
-  }  
+.calc {
+  background-image: url("../images/ARTICLE-calculator-image-680x500.jpg");
+}  
 
   /* setting the background images for the app boxes */
-  .four {
-    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
-  }
+.four {
+  background-image: url("../images/ARTICLE-calculator-image-680x500.jpg");
+}
 
   /* setting the background images for the app boxes */
-  .buddy {
-    background-image: url("../ARTICLE-calculator-image-680x500.jpg");
-  }
+.buddy {
+  background-image: url("../images/ARTICLE-calculator-image-680x500.jpg");
+}
 
-
-
-  /* defines fles flow of */
-  footer {
-    /* display: flex;
-    justify-content: space-evenly;
-    flex: 0 0 64%;
-    bottom: 0; */
+.footer {
     background: grey;
-    border-left: solid 3px cornflowerblue;
     color: #fff;
     font-size: 2em;
-    /* margin-top: auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right: 5px; */
-  }
+}
   
